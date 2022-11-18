@@ -1,0 +1,326 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+}
+
+a{
+    text-decoration: none; 
+    color: inherit;
+}
+
+
+/*----------CSS MENU---------------*/
+
+#Logo-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: 94px auto;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.fa-arrow-left{
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+
+img.img_menu{
+    width: 100%;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-menu{
+    background-color: rgb(242, 242, 242);
+    border-radius: 30px 30px 0 0;
+    margin-top: -7%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+}
+
+.titre-resto{
+    font-family: 'Shrikhand';
+}
+
+.flex-menu{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+    border-radius: 15px;
+    padding-left: 3%;
+}
+
+.titre-grid-menu{
+    font-weight: bold;
+}
+
+.habillage-titre{
+    height: 3px;
+    background-color: #99E2D0;
+    width: 40px;
+    margin-bottom: 13px;
+}
+
+.sous-titre_resto{
+    margin-bottom: 3px;
+}
+
+.sous-titre-grid-menu{
+    font-size: 15px;
+    font-weight:lighter;
+}
+
+.prix-grid-menu{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.flex-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.grid-menu{
+    display: grid;
+    row-gap: 15px;
+}
+
+.bouton-menu{
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: auto; 
+    background: linear-gradient(180deg, #ff79da 0%, #9356fc 100%);
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+}
+
+/*----------SUP MENU---------------*/
+
+
+#Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.ville{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+}
+
+.location{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(98, 98, 98);
+    cursor: pointer;
+}
+
+.loc-icon{
+    width: 30px;
+}
+
+.loc-ville{
+    font-weight: bold;
+}
+
+
+
+
+.concept{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre-concept{
+    text-align: center;   
+}
+
+.bouton-concept{
+    height: auto; 
+    background: linear-gradient(180deg, #ff79da 0%, #9356fc 100%);
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+}
+
+
+
+
+.selection{
+    margin-top: 50px;
+}
+
+.selection h2{
+    padding-left: 1%;
+}
+
+.ensemble{
+    margin-left: 1%;
+    font-weight: bold;
+}
+
+.carte{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    border-radius: 15px;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+    margin-bottom: 5%;
+}
+
+.carte:hover{
+    background-color: #f5e1ff;
+}
+
+.carte:hover i{
+    color: #9356fc;
+}
+
+
+.puce{
+    border-radius: 10px;
+    font-size: small;
+    background-color: #9356fc;
+    padding: 2px 6px 2px 6px;
+    position: absolute;
+    color: white;
+    display: flex;
+    margin-left: 2.5%;
+    margin-top: 4%;
+}
+
+.icon{
+    color: rgb(98, 98, 98);
+    margin: 0 20px;
+}
+
+
+
+.restaurants{
+    padding-left: 1%;
+    background-color: rgb(242, 242, 242);
+    padding-top: 30px;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.carte_resto img{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+}
+
+.carte_resto{
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.texte_carte{
+    width: 285px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    padding-left: 15px;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+}
+
+.nom_restaurant{
+    font-weight: bold;
+}
+
+
+
+#Logo-footer{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    width: 120px;
+}
+
+.icon-texte-footer{
+    cursor: pointer;
+    display: flex;
+    align-items:center;
+    height: 30px;
+}
+
+.icon-texte-footer i{
+    padding-right: 15px;
+}
+
+.footer{
+    padding-left: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+
+
+@media screen and (min-width: 376px){
+
+    .ensemble{
+        display: flex;
+        column-gap: 30px;
+        margin: 0;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .puce{
+        display: none;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+}
+
+
+
