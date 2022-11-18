@@ -257,6 +257,7 @@ cursor: pointer;
 }
 @media screen and (max-width : 510px) {
     .grid{
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
