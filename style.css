@@ -298,7 +298,7 @@ cursor: pointer;
 
 
 
-@media screen and (min-width: 376px){
+@media screen and (min-width: 510px){
 
     .ensemble{
         display: flex;
