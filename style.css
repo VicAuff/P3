@@ -256,6 +256,13 @@ justify-content: center;
 cursor: pointer;
 }
 
+.grid{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, 1fr);
+grid-row-gap: 15px;
+}
+
 .texte_carte{
     width: 285px;
     background-color: white;
@@ -298,7 +305,7 @@ cursor: pointer;
 
 
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 550px){
 
     .ensemble{
         display: flex;
