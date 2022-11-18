@@ -305,7 +305,7 @@ grid-row-gap: 15px;
 
 
 
-@media screen and (min-width: 550px){
+@media screen and (min-width: 376px){
 
     .ensemble{
         display: flex;
