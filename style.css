@@ -147,6 +147,17 @@ img.img__menu{
     cursor: pointer;
 }
 
+.Recherche-client{
+    color: rgb(98, 98, 98);
+    border: none;
+    height: 50px;
+    width: 150px;
+    background-color:  rgb(230, 230, 230);
+    font-family: 'Shrikhand' ;
+    font-weight: bold;
+    font-size:large;
+}
+
 .location__icon{
     width: 30px;
 }
