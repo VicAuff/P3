@@ -133,7 +133,7 @@ img.img_menu{
     background-color: rgb(230, 230, 230);
 }
 
-.location{
+.ville__location{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -141,11 +141,11 @@ img.img_menu{
     cursor: pointer;
 }
 
-.loc-icon{
+.location__icon{
     width: 30px;
 }
 
-.loc-ville{
+.location__ville{
     font-weight: bold;
 }
 
@@ -160,11 +160,11 @@ img.img_menu{
     justify-content: center;
 }
 
-.titre-concept{
+.concept__titre{
     text-align: center;   
 }
 
-.bouton-concept{
+.concept__bouton{
     height: auto; 
     background: linear-gradient(180deg, #ff79da 0%, #9356fc 100%);
     border-radius: 30px;
@@ -186,12 +186,12 @@ img.img_menu{
     padding-left: 1%;
 }
 
-.ensemble{
+.selection__ensemble{
     margin-left: 1%;
     font-weight: bold;
 }
 
-.carte{
+.selection__carte{
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -204,16 +204,15 @@ img.img_menu{
     margin-bottom: 5%;
 }
 
-.carte:hover{
+.selection__carte:hover{
     background-color: #f5e1ff;
 }
 
-.carte:hover i{
+.selection__carte:hover i{
     color: #9356fc;
 }
 
-
-.puce{
+.selection__puce{
     border-radius: 10px;
     font-size: small;
     background-color: #9356fc;
@@ -225,7 +224,7 @@ img.img_menu{
     margin-top: 4%;
 }
 
-.icon{
+.selection__icon{
     color: rgb(98, 98, 98);
     margin: 0 20px;
 }
