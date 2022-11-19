@@ -13,13 +13,15 @@ a{
 }
 
 
-/*--------------CSS MENU---------------*/
+/*--------------CSS MENU RESTO---------------*/
+
+/*logo et retour*/
 
 #Logo-menu{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-template-columns: 94px auto;
+    grid-template-columns: 160px auto;
     margin-top: 25px;
     margin-bottom: 15px;
 }
@@ -31,17 +33,18 @@ a{
     padding-top: 5px;
 }
 
-img.img_menu{
+/*menu*/
+
+img.img__menu{
     width: 100%;
 }
-
 
 .menu{
     display: flex;
     flex-direction: column;
 }
 
-.carte-menu{
+.menu__carte{
     background-color: rgb(242, 242, 242);
     border-radius: 30px 30px 0 0;
     margin-top: -7%;
@@ -50,11 +53,11 @@ img.img_menu{
     padding-bottom: 5%;
 }
 
-.titre-resto{
+.menu__titre-resto{
     font-family: 'Shrikhand';
 }
 
-.flex-menu{
+.menu__flex{
     cursor: pointer;
     background-color: white;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
@@ -62,39 +65,39 @@ img.img_menu{
     padding-left: 3%;
 }
 
-.titre-grid-menu{
+.menu__titre-grid{
     font-weight: bold;
 }
 
-.habillage-titre{
+.menu__habillage-titre{
     height: 3px;
     background-color: #99E2D0;
     width: 40px;
     margin-bottom: 13px;
 }
 
-.sous-titre_resto{
+.menu__sous-titre_resto{
     margin-bottom: 3px;
 }
 
-.sous-titre-grid-menu{
+.menu__sous-titre-grid{
     font-size: 15px;
     font-weight:lighter;
 }
 
-.prix-grid-menu{
+.menu__prix-grid{
     font-weight: bold;
     font-size: 15px;
 }
 
-.flex-menu{
+.menu__flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 5%;
 }
 
-.grid-menu{
+.menu__grid{
     display: grid;
     row-gap: 15px;
 }
@@ -107,7 +110,7 @@ img.img_menu{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 180px;
     height: auto; 
     background: linear-gradient(180deg, #ff79da 0%, #9356fc 100%);
     border-radius: 30px;
@@ -115,7 +118,7 @@ img.img_menu{
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
 }
 
-/*---------------SUP MENU---------------*/
+/*---------------CSS MENU RESTO---------------*/
 
 
 
@@ -153,7 +156,7 @@ img.img_menu{
 }
 
 
-
+/*------------PROPAL DE VALEUR------------*/
 
 .concept{
     background-color: rgb(242, 242, 242);
@@ -179,7 +182,7 @@ img.img_menu{
 }
 
 
-
+/*-----------FONCTIONNEMENT----------*/
 
 .selection{
     display: flex;
@@ -234,7 +237,7 @@ img.img_menu{
     margin: 0 20px;
 }
 
-
+/*--------------PROPAL RESTO------------*/
 
 .restaurants{
     padding-left: 1%;
@@ -249,6 +252,7 @@ img.img_menu{
     height: 200px;
     border-radius: 20px 20px 0 0;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+    object-fit: cover;
 }
 
 .restaurants__carte_resto{
@@ -284,7 +288,7 @@ width: 1200px;
 margin: 0 auto;
 }
 
-
+/*----------------FOOTER-------------*/
 
 #Logo-footer{
     padding-top: 30px;
@@ -312,10 +316,12 @@ margin: 0 auto;
     color: white;
 }
 
-@media screen and (max-width: 992px) {
+
+/*-----------MEDIA QUERIES-----------*/
+
+@media screen and (max-width: 992px){
 
     .restaurants__menu{
-        flex-wrap: wrap;
         flex-direction: column;
         width: 100%;
     }
@@ -323,6 +329,8 @@ margin: 0 auto;
 }
 
 @media screen and (min-widht: 991px){  
+
+
     .restaurants__menu{
         width: 1200px;
         margin: 0 auto;

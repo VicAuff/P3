@@ -10,7 +10,7 @@
 
     <!-- CSS -->
 
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="../style.css">
 
     <!--FONTAWESOME-->
 
@@ -37,7 +37,7 @@
             <!-- LOGO+RETOUR -->
 
             <div class="entete-menu">
-                <a href="pages/P3/index.html" id="Logo-menu"><i class="fas fa-arrow-left"></i><img src="images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"></a>
+                <a href="../index.html" id="Logo-menu"><i class="fas fa-arrow-left"></i><img src="../images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"></a>
             </div>
             
         </header>
@@ -46,131 +46,153 @@
 
         <section>
             <div class="menu">
-                <img class="img_menu" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant 1">
+                <img class="menu__img" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Restaurant 1">
                 
-                <div class="carte-menu">
-                    <h3 class="titre-resto">À la française</h3>
+                <div class="menu__carte">
+                    <h3 class="menu__titre-resto">À la française</h3>
+                    
+                    <!-- ENTREE -->
 
-                    <p class="sous-titre_resto">ENTRÉES</p>
-                    <div class="habillage-titre"></div>
+                    <p class="menu__sous-titre_resto">ENTRÉES</p>
+                    <div class="menu__habillage-titre"></div>
 
-                    <div class="grid-menu">
-                        <div class="flex-menu">
-                            <div class="titre-grid-menu">
+                    <div class="menu__grid">
+
+                        <div class="menu__flex">
+
+                            <div class="menu__titre-grid">
                                 <p>Tartare de poulpe acidulé</p>
-                                <p class="sous-titre-grid-menu">Aux zestes d'orange</p>
-                                    
+                                <p class="menu__sous-titre-grid">Aux zestes d'orange</p>   
                             </div>
-                            <div class="prix-grid-menu">
+
+                            <div class="menu__prix-grid">
                                 <p>25 €</p>
-                            </div>                               
+                            </div>
+
                         </div>
                 
-                        <div class="flex-menu">
-                            <div class="titre-grid-menu">
+                        <div class="menu__flex">
+
+                            <div class="menu__titre-grid">
                                 <p>Velouté de légumes d'antan</p>
-                                <p class="sous-titre-grid-menu">Carotte, panais, topinambour</p>
-                                    
+                                <p class="menu__sous-titre-grid">Carotte, panais, topinambour</p>    
                             </div>
-                            <div class="prix-grid-menu">
+
+                            <div class="menu__prix-grid">
                                 <p>35 €</p>
-                            </div>                               
+                            </div>
+
                         </div>
                     
 
-                        <div class="flex-menu">
-                            <div class="titre-grid-menu">
+                        <div class="menu__flex">
+
+                            <div class="menu__titre-grid">
                                 <p>Soupe à l'oignon</p>
-                                <p class="sous-titre-grid-menu">Revisitée</p>
+                                <p class="menu__sous-titre-grid">Revisitée</p>
                                     
                             </div>
-                            <div class="prix-grid-menu">
+                            <div class="menu__prix-grid">
                                 <p>20 €</p>
                             </div>                               
                         </div>
-                                      
-                        <p class="sous-titre_resto">PLATS</p>
-                        <div class="habillage-titre"></div>
 
-                        <div class="grid-menu">
-                            <div class="flex-menu">
-                                <div class="titre-grid-menu">
-                                    <p>Coquilles Saint-Jacques</p>
-                                    <p class="sous-titre-grid-menu">Accompagnées d'une purée de panais</p>
-                                        
-                                </div>
-                                <div class="prix-grid-menu">
-                                    <p>40 €</p>
-                                </div>                               
-                            </div>
+                        <!-- PLAT -->
+                        
+                        <div>
+                            <p class="menu__sous-titre_resto">PLATS</p>
+                            <div class="menu__habillage-titre"></div>
                         </div>
 
-                        <div class="grid-menu">
-                            <div class="flex-menu">
-                                <div class="titre-grid-menu">
-                                    <p>Magret de canard</p>
-                                    <p class="sous-titre-grid-menu">Et parmentier de pommes de terre</p>
-                                        
-                                </div>
-                                <div class="prix-grid-menu">
-                                    <p>35 €</p>
-                                </div>                               
+                        
+                        <div class="menu__flex">
+
+                            <div class="menu__titre-grid">
+                                <p>Coquilles Saint-Jacques</p>
+                                <p class="sous-titre-grid-menu">Accompagnées d'une purée de panais</p>       
                             </div>
+
+                            <div class="prix-grid-menu">
+                                <p>40 €</p>
+                            </div> 
+
+                        </div>
+                        
+
+                        <div class="menu__flex">
+
+                            <div class="menu__titre-grid">
+                                <p>Magret de canard</p>
+                                <p class="menu__sous-titre-grid">Et parmentier de pommes de terre</p>          
+                            </div>
+
+                            <div class="menu__prix-grid">
+                                <p>35 €</p>
+                            </div>                               
+                            
                         </div>
 
-                        <div class="grid-menu">
-                            <div class="flex-menu">
-                                <div class="titre-grid-menu">
-                                    <p>Pigeonneau d’Ille-et-Vilaine</p>
-                                    <p class="sous-titre-grid-menu">Sur son lit de gnocchis aux légumes</p>
+                        
+                        <div class="menu__flex">
+                            <div class="menu__titre-grid">
+                                <p>Pigeonneau d’Ille-et-Vilaine</p>
+                                <p class="menu__sous-titre-grid">Sur son lit de gnocchis aux légumes</p>
                                         
-                                </div>
-                                <div class="prix-grid-menu">
-                                    <p>44 €</p>
-                                </div>                               
                             </div>
+
+                            <div class="menu__prix-grid">
+                                <p>44 €</p>
+                            </div>   
+
+                        </div>
+                        
+
+                        <!-- DESSERT -->
+                        
+                        <div>
+                            <p class="menu__sous-titre_resto">DESSERTS</p>
+                            <div class="menu__habillage-titre"></div>
                         </div>
 
-                        <p class="sous-titre_resto">DESSERTS</p>
-                        <div class="habillage-titre"></div>
-
-                        <div class="grid-menu">
-                            <div class="flex-menu">
-                                <div class="titre-grid-menu">
-                                    <p>Pétales de violettes glacés</p>
-                                    <p class="sous-titre-grid-menu">Et purée de noisettes</p>
+                        
+                        <div class="menu__flex">
+                            <div class="menu__titre-grid">
+                                <p>Pétales de violettes glacés</p>
+                                <p class="menu__sous-titre-grid">Et purée de noisettes</p>
                                         
-                                </div>
-                                <div class="prix-grid-menu">
-                                    <p>18 €</p>
-                                </div>                               
                             </div>
+
+                            <div class="menu__prix-grid">
+                                <p>18 €</p>
+                            </div>                               
+                        </div>
+                        
+
+                        
+                        <div class="menu__flex">
+
+                            <div class="menu__titre-grid">
+                                <p>Fondant au chocolat</p>
+                                <p class="menu__sous-titre-grid">Revisité</p>            
+                            </div>
+
+                            <div class="menu__prix-grid">
+                                <p>22 €</p>                               
+                            </div>
+
                         </div>
 
-                        <div class="grid-menu">
-                            <div class="flex-menu">
-                                <div class="titre-grid-menu">
-                                    <p>Fondant au chocolat</p>
-                                    <p class="sous-titre-grid-menu">Revisité</p>
-                                        
-                                </div>
-                                <div class="prix-grid-menu">
-                                    <p>22 €</p>
-                                </div>                               
-                            </div>
-                        </div>
+                        <div class="menu__flex">
 
-                        <div class="grid-menu">
-                            <div class="flex-menu">
-                                <div class="titre-grid-menu">
-                                    <p>Millefeuille croustillant</p>
-                                    <p class="sous-titre-grid-menu">Myrtilles et pâte d’amande</p>
-                                        
-                                </div>
-                                <div class="prix-grid-menu">
-                                    <p>23 €</p>
-                                </div>                               
+                            <div class="menu__titre-grid">
+                                <p>Millefeuille croustillant</p>
+                                <p class="menu__sous-titre-grid">Myrtilles et pâte d’amande</p>      
                             </div>
+
+                            <div class="menu__prix-grid">
+                                <p>23 €</p>
+                            </div>                               
+                            
                         </div>
 
                     </div> 
@@ -193,24 +215,24 @@
 
         <footer class="footer">
 
-            <a href="#" id="Logo-footer"><img src="images/logo/ohmyfood@2xwhite.svg" alt="Logo Ohmyfood"></a> 
+            <a href="#" id="Logo-footer"><img src="../images/logo/ohmyfood@2xwhite.svg" alt="Logo Ohmyfood"></a>
 
-                <div class="icon-texte-footer">
+                <div class="footer__icon-texte">
                     <i class="fas fa-utensils"></i>
-                    <h4 class="lien">Proposer un restaurant</h4>
+                    <h4 class="footer__lien">Proposer un restaurant</h4>
                 </div>
 
-                <div class="icon-texte-footer">
+                <div class="footer__icon-texte">
                     <i class="fas fa-hands-helping"></i>
-                    <h4 class="lien">Devenir partenaire</h4>
+                    <h4 class="footer__lien">Devenir partenaire</h4>
                 </div>
 
-                <div class="icon-texte-footer">
-                    <h4 class="lien">Mention légales</h4>
+                <div class="footer__icon-texte">
+                    <h4 class="footer__lien">Mention légales</h4>
                 </div>
                 
-                <div class="icon-texte-footer">
-                    <h4 class="lien"><a href="mailto:contact@ohmyfood.com">Contact</a></h4>
+                <div class="footer__icon-texte">
+                    <h4 class="footer___lien"><a href="mailto:contact@ohmyfood.com">Contact</a></h4>
                 </div>
             
 
