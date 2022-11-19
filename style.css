@@ -12,25 +12,35 @@ a{
     color: inherit;
 }
 
+header{
+    box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 20%);
+    position: relative;
+}
+
 
 /*--------------CSS MENU RESTO---------------*/
 
 /*logo et retour*/
 
-#Logo-menu{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-columns: 160px auto;
-    margin-top: 25px;
-    margin-bottom: 15px;
+.entete-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.fa-arrow-left{
-    font-weight: 900;
+.entete-menu__logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.entete-menu__retour{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+    top: 15px;
     font-size: 20px;
-    margin-left: 20px;
-    padding-top: 5px;
 }
 
 /*menu*/
@@ -120,7 +130,51 @@ img.img__menu{
 
 /*---------------CSS MENU RESTO---------------*/
 
+/*---------------LOADER----------------*/
 
+.chargement{
+    height: 100%;
+    background: white;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    animation: spinner 2s linear;
+    visibility: hidden;
+}
+
+.chargement__bord{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 10px solid transparent;
+    border-top: 10px solid #9356DC;
+    border-bottom: 10px solid #FF79DA;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: spinner-border 2s linear;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.chargement__milieux{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #99E2D0;
+}
 
 /*-------LOGO ET LOCALISATION RESTO ----*/
 
@@ -258,12 +312,32 @@ img.img__menu{
     padding-bottom: 40px;
 }
 
+.restaurants__img{
+    position: relative;
+}
+
 .restaurants__carte_resto img{
+    display: flex;
     width: 300px;
     height: 200px;
     border-radius: 20px 20px 0 0;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
     object-fit: cover;
+}
+
+.restaurants__nouveau p{
+    color: #1b6150;
+    background-color: #99e2d0;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .restaurants__carte_resto{
