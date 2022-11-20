@@ -55,10 +55,15 @@ img.img__menu{
 }
 
 .menu__coeur{
+    cursor: pointer;
     position: absolute;
     right: 25px;
     top: 20px;
     font-size: 20px;
+}
+
+.fa-heart:hover{
+    background: linear-gradient(180deg, #ff79da 0%, #9356fc 100%);
 }
 
 .menu__carte{
