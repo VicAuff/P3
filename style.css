@@ -143,6 +143,7 @@ img.img__menu{
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 1000;
 }
 
 .chargement__bord::before, .chargement__bord::after{
