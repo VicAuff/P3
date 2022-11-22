@@ -62,10 +62,6 @@ img.img__menu{
     font-size: 20px;
 }
 
-.fa-heart:hover{
-    background: linear-gradient(180deg, #ff79da 0%, #9356fc 100%);
-}
-
 .menu__carte{
     background-color: rgb(242, 242, 242);
     border-radius: 30px 30px 0 0;
@@ -172,6 +168,7 @@ img.img__menu{
 /*---------------LOADER----------------*/
 /*---------------LOADER----------------*/
 
+
 .chargement{
     border-radius: 5px;
     margin: auto 0;
@@ -217,21 +214,12 @@ img.img__menu{
 .chargement__bord{
     display: block;
     position: relative;
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 7px solid transparent;
     border-top-color: #9356fc;
     animation: spin 1s linear infinite;
-}
-
-.chargement__milieux{
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin: 110px auto 0;
-    background-color: #6339ab;
-    animation-duration: 1.0s;
 }
 
 @keyframes spin{
@@ -460,7 +448,28 @@ img.img__menu{
     right: 15px;
     bottom: 29px;
     font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+/*test coeur anime*/
+
+/*.fa-heart.remplissage{
+    display: none; 
+}*/
+
+/*.fa-heart.vide:hover .fa-heart.remplissage{
+    display:flex;
+}*/
+
+/*.fa-heart.vide:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(45,3,0,0);
+    color: linear-gradient (250deg, #ff79da, #6339ab) ;
+}*/
 
 .restaurants__nom{
     font-weight: bold;
