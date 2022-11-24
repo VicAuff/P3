@@ -62,6 +62,14 @@ img.img__menu{
     font-size: 20px;
 }
 
+.menu__coeur:hover .fa-solid{
+    display: block;
+}
+
+.menu__coeur:hover .fa-heart.vide{
+    display: none;
+}
+
 .menu__carte{
     background-color: rgb(242, 242, 242);
     border-radius: 30px 30px 0 0;
@@ -117,7 +125,7 @@ img.img__menu{
     padding-right: 0%;
 }
 
-.menu__grid .menu__flex p{
+.menu__grid .menu__flex {
     text-overflow: ellipsis; /*voir ça pour les 3 ... au deploiment*/
     overflow: hidden; /*voir ça pour les 3 ... au deploiment*/
     white-space: nowrap;
@@ -488,6 +496,12 @@ img.img__menu{
     position: relative;
 }
 
+.fa-solid.fa-heart.remplissage{
+    color: #ff79da;
+    /*background: linear-gradient(180deg, #ff79da 0%, #9356fc 100%); ::before ::after*/
+}
+
+
 .restaurants__coeur{
     cursor: pointer;
     position: absolute;
@@ -500,22 +514,17 @@ img.img__menu{
     justify-content: center;
 }
 
-/*test coeur anime*/
+.restaurants__coeur:hover .fa-solid{
+    display: block;
+}
 
-/*.fa-heart.remplissage{
-    display: none; 
-}*/
+.restaurants__coeur:hover .fa-heart.vide{
+    display: none;
+}
 
-/*.fa-heart.vide:hover .fa-heart.remplissage{
-    display:flex;
-}*/
-
-/*.fa-heart.vide:hover{
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(45,3,0,0);
-    color: linear-gradient (250deg, #ff79da, #6339ab) ;
-}*/
+.fa-heart.remplissage{
+    display: none;
+}
 
 .restaurants__nom{
     font-weight: bold;
@@ -571,7 +580,7 @@ margin: 0 auto;
     
 }
 
-@media screen and (min-widht: 991px){  
+@media screen and (min-widht: 991px){ 
 
 
     .restaurants__menu{
