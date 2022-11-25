@@ -171,45 +171,38 @@ img.img__menu{
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
 }
 
-/*apparition menu lent--------ne fonctionne pas comme je le veux---*/ 
+/*-----------apparition menu lent--------------*/ 
+
 .menu__flex{
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari et Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: appear 1s;
 }
-@keyframes fadein {
-    from {
-        opacity:0;
+
+@keyframes appear {
+    0% {
+      transform: scale(0);
     }
-    to {
-        opacity:5;
+    100% {
+      transform: scale(1);
     }
+    
 }
-@-moz-keyframes fadein { /* sur Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:5;
-    }
+/*
+.menu__animation-entree:nth-child(1), .menu__animation-plat:nth-child(1), .menu__animation-dessert:nth-child(1){
+    animation-delay: 100ms;
 }
-@-webkit-keyframes fadein { /* sur Safari et Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:5;
-    }
+.menu__animation-entree:nth-child(2), .menu__animation-plat:nth-child(2), .menu__animation-dessert:nth-child(2){
+    animation-delay: 200ms;
 }
-@-o-keyframes fadein { /* sur Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 5;
-    }
+.menu__animation-entree:nth-child(3), .menu__animation-plat:nth-child(3), .menu__animation-dessert:nth-child(3){
+    animation-delay: 300ms;
 }
+.menu__animation-entree:nth-child(4), .menu__animation-plat:nth-child(4), .menu__animation-dessert:nth-child(4){
+    animation-delay: 400ms;
+}
+.menu__animation-entree:nth-child(5), .menu__animation-plat:nth-child(5), .menu__animation-dessert:nth-child(5){
+    animation-delay: 500ms;
+}
+
 
 /*---------------CSS MENU RESTO---------------*/
 
