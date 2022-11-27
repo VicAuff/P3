@@ -20,6 +20,7 @@ header{
 
 /*--------------CSS MENU RESTO---------------*/
 
+
 /*logo et retour*/
 
 .entete-menu{
@@ -42,6 +43,7 @@ header{
     top: 15px;
     font-size: 20px;
 }
+
 
 /*menu*/
 
@@ -107,11 +109,23 @@ img.img__menu{
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
+
 }
 
 .menu__sous-titre-grid{
     font-size: 15px;
     font-weight:lighter;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu__titre-principal-grid{
+font-weight: bold;
+font-size: 15px;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
 }
 
 .menu__prix-grid{
@@ -148,6 +162,44 @@ img.img__menu{
     align-items: center;
     justify-content: center;
     font-size: 30px;
+	-webkit-animation: scale-up-hor-right 0.4s;
+	animation: scale-up-hor-right 0.4s;
+}
+
+@-webkit-keyframes scale-up-hor-right{
+
+    0%{
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    }
+
+    100%{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    }
+
+}
+
+@keyframes scale-up-hor-right{
+
+    0%{
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    }
+    
+    100%{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    }
+    
 }
 
 .menu__ok:hover .fa-circle-check{
@@ -171,40 +223,90 @@ img.img__menu{
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
 }
 
-/*-----------apparition menu lent--------------*/ 
+
+/*-------------Apparition menu lent--------------*/ 
 
 .menu__flex{
-    animation: appear 1s;
+	-webkit-animation: fade-in-bottom 0.6s;
+	animation: fade-in-bottom 0.6s;
 }
 
-@keyframes appear {
+@-webkit-keyframes fade-in-bottom{
+
     0% {
-      transform: scale(0);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
     }
-    100% {
-      transform: scale(1);
+
+    100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
     }
-    
+
 }
-/*
-.menu__animation-entree:nth-child(1), .menu__animation-plat:nth-child(1), .menu__animation-dessert:nth-child(1){
+
+@keyframes fade-in-bottom{
+
+    0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+    }
+
+    100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    }
+
+}
+
+.menu__flex:nth-child(1), .menu__flex:nth-child(1), .menu__flex:nth-child(1){
     animation-delay: 100ms;
 }
-.menu__animation-entree:nth-child(2), .menu__animation-plat:nth-child(2), .menu__animation-dessert:nth-child(2){
+
+.menu__flex:nth-child(2), .menu__flex:nth-child(2), .menu__flex:nth-child(2){
     animation-delay: 200ms;
 }
-.menu__animation-entree:nth-child(3), .menu__animation-plat:nth-child(3), .menu__animation-dessert:nth-child(3){
+
+.menu__flex:nth-child(3), .menu__flex:nth-child(3), .menu__flex:nth-child(3){
     animation-delay: 300ms;
 }
-.menu__animation-entree:nth-child(4), .menu__animation-plat:nth-child(4), .menu__animation-dessert:nth-child(4){
+
+.menu__flex:nth-child(4), .menu__flex:nth-child(4), .menu__flex:nth-child(4){
     animation-delay: 400ms;
 }
-.menu__animation-entree:nth-child(5), .menu__animation-plat:nth-child(5), .menu__animation-dessert:nth-child(5){
+
+.menu__flex:nth-child(5), .menu__flex:nth-child(5), .menu__flex:nth-child(5){
     animation-delay: 500ms;
 }
 
+.menu__flex:nth-child(6), .menu__flex:nth-child(6), .menu__flex:nth-child(6){
+    animation-delay: 600ms;
+}
+.menu__flex:nth-child(7), .menu__flex:nth-child(7), .menu__flex:nth-child(8){
+    animation-delay: 700ms;
+}
 
-/*---------------CSS MENU RESTO---------------*/
+.menu__flex:nth-child(8), .menu__flex:nth-child(8), .menu__flex:nth-child(8){
+    animation-delay: 800ms;
+}
+
+.menu__flex:nth-child(9), .menu__flex:nth-child(9), .menu__flex:nth-child(9){
+    animation-delay: 900ms;
+}
+.menu__flex:nth-child(10), .menu__flex:nth-child(10), .menu__flex:nth-child(10){
+    animation-delay: 1000ms;
+}
+
+.menu__flex:nth-child(11), .menu__flex:nth-child(11), .menu__flex:nth-child(11){
+    animation-delay: 1100ms;
+}
+
+
+/*---------------FIN CSS MENU RESTO---------------*/
 
 
 
@@ -267,25 +369,29 @@ img.img__menu{
 }
 
 @keyframes spin{
-    0% {
+
+    0%{
         transform: rotate(0deg);
     }
 
-    100% {
+    100%{
         transform: rotate(360deg);
     }
+
 }
 
 @keyframes opening{
-    0% {
+
+    0%{
        opacity: 1;
        visibility: visible;
     }
 
-    100% {
+    100%{
         opacity: 0;
         visibility: hidden;
     }
+
 }
 
 /*---------------LOADER----------------*/
@@ -492,8 +598,37 @@ img.img__menu{
     background-image: linear-gradient(180deg, #ff79da 0%, #9356fc 100%);
     color: transparent;
     transform: scale(1.1);
+    -webkit-animation: scale-up-center 0.4s;
+    animation: scale-up-center 0.4s;
 }
 
+@-webkit-keyframes scale-up-center{
+
+    0%{
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    }
+
+    100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+
+}
+
+@keyframes scale-up-center{
+
+    0%{
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    }
+
+    100%{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+
+}
 
 .restaurants__coeur{
     cursor: pointer;
@@ -533,7 +668,8 @@ width: 1200px;
 margin: 0 auto;
 }
 
-/*----------------FOOTER-------------*/
+
+/*-------------FOOTER-------------*/
 
 #Logo-footer{
     padding-top: 30px;
@@ -575,7 +711,6 @@ margin: 0 auto;
 
 @media screen and (min-widht: 991px){ 
 
-
     .restaurants__menu{
         width: 1200px;
         margin: 0 auto;
@@ -592,4 +727,5 @@ margin: 0 auto;
         padding: 1rem;
         flex-wrap: wrap;
     }
+
 }
