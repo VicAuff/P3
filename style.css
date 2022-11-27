@@ -305,6 +305,10 @@ white-space: nowrap;
     animation-delay: 1100ms;
 }
 
+.menu__flex:nth-child(12), .menu__flex:nth-child(12), .menu__flex:nth-child(12){
+    animation-delay: 1200ms;
+}
+
 
 /*---------------FIN CSS MENU RESTO---------------*/
 
@@ -533,7 +537,7 @@ white-space: nowrap;
 .restaurants{
     padding-left: 1%;
     background-color: rgb(242, 242, 242);
-    padding-top: 30px;
+    padding-top: 5px;
     margin: 0;
     padding-bottom: 40px;
 }
@@ -544,8 +548,8 @@ white-space: nowrap;
 
 .restaurants__carte_resto img{
     display: flex;
-    width: 300px;
-    height: 200px;
+    width: 430px;
+    height: 270px;
     border-radius: 20px 20px 0 0;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
     object-fit: cover;
@@ -573,12 +577,11 @@ white-space: nowrap;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 45%;
     padding: 1rem;
 }
 
 .restaurants__texte_carte{
-    width: 285px;
+    width: 415px;
     background-color: white;
     border-radius: 0 0 20px 20px;
     padding-left: 15px;
@@ -664,7 +667,6 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
-width: 1200px;
 margin: 0 auto;
 }
 
@@ -697,14 +699,38 @@ margin: 0 auto;
     color: white;
 }
 
+#Dimension{
+    object-fit: cover;
+    height: 650px;
+}
+
 
 /*-----------MEDIA QUERIES-----------*/
+
+@media screen and (min-width: 769px){
+
+    .menu__img{
+        padding-top: 20px;
+        border-radius: 40px 40px 0 0;
+        width: 56%;
+        margin: auto;
+    }
+
+    .menu__carte{
+        width: 50%;
+        border-radius: 30px;
+        margin: auto;
+        margin-top: -7%;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+}
 
 @media screen and (max-width: 992px){
 
     .restaurants__menu{
         flex-wrap: wrap;
-        width: 100%;
     }
     
 }
@@ -712,13 +738,11 @@ margin: 0 auto;
 @media screen and (min-widht: 991px){ 
 
     .restaurants__menu{
-        width: 1200px;
         margin: 0 auto;
     }
 
     .restaurants__carte_resto {
         display: flex;
-    
         margin-top: 20px;
         align-items: center;
         justify-content: center;
