@@ -51,6 +51,11 @@ img.img__menu{
     width: 100%;
 }
 
+#Dimension{
+    object-fit: cover;
+    height: 650px;
+}
+
 .menu{
     display: flex;
     flex-direction: column;
@@ -698,12 +703,6 @@ margin: 0 auto;
     background-color: rgb(50, 50, 50);
     color: white;
 }
-
-#Dimension{
-    object-fit: cover;
-    height: 650px;
-}
-
 
 /*-----------MEDIA QUERIES-----------*/
 
