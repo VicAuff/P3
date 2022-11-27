@@ -228,6 +228,11 @@ white-space: nowrap;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
 }
 
+.bouton-menu:hover{
+    background: linear-gradient(180deg, #ff79d9ab 0%, #9356fcb4 100%);
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 30%);
+}
+
 
 /*-------------Apparition menu lent--------------*/ 
 
@@ -473,6 +478,11 @@ white-space: nowrap;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
 }
 
+.concept__bouton:hover{
+    background: linear-gradient(180deg, #ff79d9ab 0%, #9356fcb4 100%);
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 30%);
+}
+
 
 /*-----------FONCTIONNEMENT----------*/
 
@@ -507,6 +517,7 @@ white-space: nowrap;
 
 .selection__carte:hover{
     background-color: #f5e1ff;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 30%);
 }
 
 .selection__carte:hover i{
