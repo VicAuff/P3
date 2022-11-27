@@ -427,15 +427,7 @@ white-space: nowrap;
     background-color: rgb(230, 230, 230);
 }
 
-.ville__location{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(98, 98, 98);
-    cursor: pointer;
-}
-
-.Recherche-client{
+.ville__recherche-client{
     color: rgb(98, 98, 98);
     border: none;
     height: 50px;
@@ -446,11 +438,12 @@ white-space: nowrap;
     font-size:large;
 }
 
-.location__icon{
+.ville__icon{
     width: 30px;
+    color: rgb(98, 98, 98);
 }
 
-.location__ville{
+.ville__ville{
     font-weight: bold;
 }
 
