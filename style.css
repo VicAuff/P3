@@ -580,9 +580,8 @@ white-space: nowrap;
     flex-direction: column;
     margin-top: 20px;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     cursor: pointer;
-    padding: 1rem;
 }
 
 .restaurants__texte_carte{
@@ -672,6 +671,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 flex-wrap: wrap;
+column-gap: 15px;
 margin: 0 auto;
 }
 
@@ -726,6 +726,19 @@ margin: 0 auto;
 
 }
 
+@media screen and (max-width: 435px) {
+
+    .restaurants__carte_resto img{
+        width: 365px;
+
+    }
+
+    .restaurants__texte_carte{
+        width: 350px;
+    }
+    
+}
+
 @media screen and (max-width: 992px){
 
     .restaurants__menu{
@@ -735,10 +748,6 @@ margin: 0 auto;
 }
 
 @media screen and (min-widht: 991px){ 
-
-    .restaurants__menu{
-        margin: 0 auto;
-    }
 
     .restaurants__carte_resto {
         display: flex;
