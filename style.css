@@ -126,11 +126,11 @@ img.img__menu{
 }
 
 .menu__titre-principal-grid{
-font-weight: bold;
-font-size: 15px;
-text-overflow: ellipsis;
-overflow: hidden;
-white-space: nowrap;
+    font-weight: bold;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .menu__prix-grid{
@@ -156,60 +156,69 @@ white-space: nowrap;
     display: none;
 }
 
-.menu__flex:hover>.menu__ok{
-    color: white;
-    background-color: #99e2d0;
-    height: 100%;
-    min-width: 80px;
-    margin: 0;
-    border-radius: 0 15px 15px 0;
+.menu__ok{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-	-webkit-animation: scale-up-hor-right 0.4s;
-	animation: scale-up-hor-right 0.4s;
+    position: absolute;
+    right: -1px;
+    bottom: 0;
+    width: 64px;
+    height: 100%;
+    background-color: white;
+    border-radius: 0px 20px 20px 0;
+    transform: translateX(100%);
+    transition: transform 0.4s;
 }
 
-@-webkit-keyframes scale-up-hor-right{
-
-    0%{
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    }
-
-    100%{
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    }
-
+.menu__ok i{
+    margin: auto;
+    font-size: 25px;
+    color: white;
+    transition: transform 0.5s;
 }
 
-@keyframes scale-up-hor-right{
-
-    0%{
-    -webkit-transform: scaleX(0.4);
-    transform: scaleX(0.4);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    }
-    
-    100%{
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    }
-    
+.menu__flex:hover .menu__ok{
+    transform: translateX(0%);
 }
 
-.menu__ok:hover .fa-circle-check{
-   transform: scale(1.1) rotate(-360deg); 
-   transition-duration: 0.9s;
+.menu__flex:hover .menu__ok i{
+    transform: rotate(360deg);
+}
+
+.menu__flex:hover .menu__titre-principal-grid{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.menu__flex:hover .menu__prix-grid{
+    margin-right: 70px;
+}
+
+.menu__prix-grid{
+    font-weight: bold;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.menu__ok{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: -1px;
+    bottom: 0;
+    width: 72px;
+    height: 100%;
+    background-color: #99E2D0;
+    border-radius: 0 16px 16px 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
+    -o-transition: transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
 }
 
 .bouton-menu{
@@ -233,94 +242,89 @@ white-space: nowrap;
     box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 30%);
 }
 
-
 /*-------------Apparition menu lent--------------*/ 
 
-.menu__flex{
-	-webkit-animation: fade-in-bottom 0.6s;
-	animation: fade-in-bottom 0.6s;
+.restaurants__carte_resto:nth-of-type(1){
+    animation: menus 1.8s 1.8s both;
+}
+.restaurants__carte_resto:nth-of-type(2){
+    animation: menus 2.1s 1.8s both;
+}
+.restaurants__carte_resto:nth-of-type(3){
+    animation: menus 2.4s 1.8s both;
+}
+.restaurants__carte_resto:nth-of-type(4){
+    animation: menus 2.7s 1.8s both;
 }
 
-@-webkit-keyframes fade-in-bottom{
+.menu__flex:nth-of-type(1){
+    animation: menus 1s 0.5s both;
+}
+.menu__flex:nth-of-type(2){
+    animation: menus 1.3s 0.5s both;
+}
+.menu__flex:nth-of-type(3){
+    animation: menus 1.6s 0.5s both;
+}
+.menu__flex:nth-of-type(4){
+    animation: menus 1.6s 0.5s both;
+}
+.menu__flex:nth-of-type(5){
+    animation: menus 1s 0.5s both;
+}
+.menu__flex:nth-of-type(6){
+    animation: menus 1.3s 0.5s both;
+}
+.menu__flex:nth-of-type(7){
+    animation: menus 1.6s 0.5s both;
+}
+.menu__flex:nth-of-type(8){
+    animation: menus 1.6s 0.5s both;
+}
+.menu__flex:nth-of-type(9){
+    animation: menus 1s 0.5s both;
+}
+.menu__flex:nth-of-type(10){
+    animation: menus 1.3s 0.5s both;
+}
+.menu__flex:nth-of-type(11){
+    animation: menus 1.6s 0.5s both;
+}
+.menu__flex:nth-of-type(12){
+    animation: menus 1.6s 0.5s both;
+}
+
+@-webkit-keyframes menus{
 
     0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
+        -webkit-transform: translateY(30%);
+        transform: translateY(30%);
+        opacity: 0%;
     }
-
-    100%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
+    100% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 100%;
     }
-
 }
 
-@keyframes fade-in-bottom{
+@keyframes menus{
 
     0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
-    opacity: 0;
+        -webkit-transform: translateY(30%);
+        transform: translateY(30%);
+        opacity: 0%;
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+        opacity: 100%;
     }
 
-    100%{
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-    }
-
 }
-
-.menu__flex:nth-child(1), .menu__flex:nth-child(1), .menu__flex:nth-child(1){
-    animation-delay: 100ms;
-}
-
-.menu__flex:nth-child(2), .menu__flex:nth-child(2), .menu__flex:nth-child(2){
-    animation-delay: 200ms;
-}
-
-.menu__flex:nth-child(3), .menu__flex:nth-child(3), .menu__flex:nth-child(3){
-    animation-delay: 300ms;
-}
-
-.menu__flex:nth-child(4), .menu__flex:nth-child(4), .menu__flex:nth-child(4){
-    animation-delay: 400ms;
-}
-
-.menu__flex:nth-child(5), .menu__flex:nth-child(5), .menu__flex:nth-child(5){
-    animation-delay: 500ms;
-}
-
-.menu__flex:nth-child(6), .menu__flex:nth-child(6), .menu__flex:nth-child(6){
-    animation-delay: 600ms;
-}
-.menu__flex:nth-child(7), .menu__flex:nth-child(7), .menu__flex:nth-child(8){
-    animation-delay: 700ms;
-}
-
-.menu__flex:nth-child(8), .menu__flex:nth-child(8), .menu__flex:nth-child(8){
-    animation-delay: 800ms;
-}
-
-.menu__flex:nth-child(9), .menu__flex:nth-child(9), .menu__flex:nth-child(9){
-    animation-delay: 900ms;
-}
-.menu__flex:nth-child(10), .menu__flex:nth-child(10), .menu__flex:nth-child(10){
-    animation-delay: 1000ms;
-}
-
-.menu__flex:nth-child(11), .menu__flex:nth-child(11), .menu__flex:nth-child(11){
-    animation-delay: 1100ms;
-}
-
-.menu__flex:nth-child(12), .menu__flex:nth-child(12), .menu__flex:nth-child(12){
-    animation-delay: 1200ms;
-}
-
 
 /*---------------FIN CSS MENU RESTO---------------*/
+
 
 
 
@@ -708,6 +712,11 @@ margin: 0 auto;
     color: white;
 }
 
+
+
+
+
+
 /*-----------MEDIA QUERIES-----------*/
 
 @media screen and (min-width: 769px){
@@ -734,7 +743,6 @@ margin: 0 auto;
 
     .restaurants__carte_resto img{
         width: 365px;
-
     }
 
     .restaurants__texte_carte{
