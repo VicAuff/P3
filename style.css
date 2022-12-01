@@ -735,16 +735,66 @@ margin: 0 auto;
 
 }
 
+/*--------Tablette--------*/
+
+@media screen and (max-width: 768px) {
+
+    .selection h2{
+        padding: 0 10px;
+    }
+    .restaurants h2{
+        padding: 0 10px;
+    }
+
+    .restaurants__carte_resto img{
+        width: 480px;
+    }
+
+    .restaurants__texte_carte{
+        width: 465px;
+    }
+    
+}
+
+/*------Tel------*/
+
 @media screen and (max-width: 510px) {
 
     #Dimension{
         object-fit: cover;
         height: 300px;
     }
-    
-} 
 
-@media screen and (max-width: 435px) {
+    .selection h2{
+        padding: 0 5px;
+    }
+    .restaurants h2{
+        padding: 0 5px;
+    }
+
+    .restaurants__carte_resto img{
+        width: 480px;
+    }
+
+    .restaurants__texte_carte{
+        width: 465px;
+    }
+    
+}
+
+@media screen and (max-width: 490px) {
+
+    .restaurants__carte_resto img{
+        width: 460px;
+    }
+
+    .restaurants__texte_carte{
+        width: 445px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
 
     .restaurants__carte_resto img{
         width: 365px;
@@ -756,6 +806,8 @@ margin: 0 auto;
 
 }
 
+/*-------PC------*/
+
 @media screen and (max-width: 992px){
 
     .restaurants__menu{
@@ -766,13 +818,17 @@ margin: 0 auto;
         object-fit: cover;
         height: 300px;
     }
+
+    
+    .restaurants__carte_resto img{
+        width: 400px;
+    }
+
+    .restaurants__texte_carte{
+        width: 385px;
+    }
     
 }
-
-/*  .selection h2{
-        padding-left: 20%;
-    }
-*/
 
 @media screen and (min-widht: 991px){ 
 
@@ -787,6 +843,16 @@ margin: 0 auto;
         flex-wrap: wrap;
     }
 
-
-
 }
+
+@media screen and (max-width: 850px){
+
+    .restaurants__carte_resto img{
+        width: 330px;
+    }
+
+    .restaurants__texte_carte{
+        width: 315px;
+    } 
+    
+} 
