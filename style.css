@@ -735,6 +735,15 @@ margin: 0 auto;
 
 }
 
+@media screen and (max-width: 510px) {
+
+    #Dimension{
+        object-fit: cover;
+        height: 300px;
+    }
+    
+} 
+
 @media screen and (max-width: 435px) {
 
     .restaurants__carte_resto img{
@@ -744,13 +753,18 @@ margin: 0 auto;
     .restaurants__texte_carte{
         width: 350px;
     }
-    
+
 }
 
 @media screen and (max-width: 992px){
 
     .restaurants__menu{
         flex-wrap: wrap;
+    }
+
+        #Dimension{
+        object-fit: cover;
+        height: 300px;
     }
     
 }
