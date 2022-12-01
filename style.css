@@ -762,12 +762,17 @@ margin: 0 auto;
         flex-wrap: wrap;
     }
 
-        #Dimension{
+    #Dimension{
         object-fit: cover;
         height: 300px;
     }
     
 }
+
+/*  .selection h2{
+        padding-left: 20%;
+    }
+*/
 
 @media screen and (min-widht: 991px){ 
 
@@ -781,5 +786,7 @@ margin: 0 auto;
         padding: 1rem;
         flex-wrap: wrap;
     }
+
+
 
 }
