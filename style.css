@@ -493,14 +493,10 @@ img.img__menu{
 .selection{
     display: flex;
     flex-direction: column;
-}
-
-.selection h2{
-    padding-left: 1%;
+    padding: 0 5px;
 }
 
 .selection__ensemble{
-    margin-left: 1%;
     font-weight: bold;
 }
 
@@ -512,7 +508,7 @@ img.img__menu{
     justify-content:flex-start;
     border-radius: 15px;
     background-color: white;
-    width: 90%;
+    width: 92%;
     margin: auto;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
     margin-bottom: 25px;
@@ -548,7 +544,7 @@ img.img__menu{
 /*--------------PROPAL RESTO------------*/
 
 .restaurants{
-    padding-left: 1%;
+    padding: 0 5px;
     background-color: rgb(242, 242, 242);
     padding-top: 5px;
     margin: 0;
