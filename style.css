@@ -444,7 +444,7 @@ img.img__menu{
     background-color:  rgb(230, 230, 230);
     font-family: 'Shrikhand' ;
     font-weight: bold;
-    font-size:large;
+    font-size: 15px;
 }
 
 .ville__icon{
@@ -493,7 +493,7 @@ img.img__menu{
 .selection{
     display: flex;
     flex-direction: column;
-    padding: 0 5px;
+    padding: 0 15px;
 }
 
 .selection__ensemble{
@@ -544,7 +544,7 @@ img.img__menu{
 /*--------------PROPAL RESTO------------*/
 
 .restaurants{
-    padding: 0 5px;
+    padding: 0 15px;
     background-color: rgb(242, 242, 242);
     padding-top: 5px;
     margin: 0;
@@ -557,14 +557,14 @@ img.img__menu{
 
 .restaurants__carte_resto img{
     display: flex;
-    width: 430px;
-    height: 270px;
+    width: 100%;
+    height: 210px;
     border-radius: 20px 20px 0 0;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
     object-fit: cover;
 }
 
-.restaurants__nouveau p{
+.restaurants__nouveau{
     color: #1b6150;
     background-color: #99e2d0;
     padding: 10px 20px;
@@ -579,12 +579,15 @@ img.img__menu{
     right: 20px;
 }
 
+.restaurants__nouveau p{
+   margin: 0;
+}
+
 .restaurants__carte_resto{
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     align-items: center;
-    /*justify-content: center;*/
     cursor: pointer;
 }
 
@@ -592,16 +595,23 @@ img.img__menu{
     width: 415px;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    padding-left: 15px;
     box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 20%);
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
+.restaurants__texte_carte > p{
+    padding-left: 15px;
+}
+
 .restaurants__position-coeur{
     position: relative;
 }
+
+/*---------POINT IMPORTANT---------*/
+/*---------------------------------*/
+/*---------------------------------*/
 
 .fa-solid.fa-heart.remplissage{
     background-clip: text;
@@ -612,6 +622,10 @@ img.img__menu{
     -webkit-animation: scale-up-center 0.4s;
     animation: scale-up-center 0.4s;
 }
+
+/*---------POINT IMPORTANT---------*/
+/*---------------------------------*/
+/*---------------------------------*/
 
 @-webkit-keyframes scale-up-center{
 
@@ -667,6 +681,7 @@ img.img__menu{
 
 .restaurants__nom{
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .restaurants__menu{
@@ -715,6 +730,23 @@ margin: 0 auto;
 
 /*-----------MEDIA QUERIES-----------*/
 
+/*----ajustement affichage tablette et pc----*/
+
+@media screen and (min-widht: 991px){ 
+
+    .restaurants__carte_resto {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 45%;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+}
+
 @media screen and (min-width: 769px){
 
     .menu__img{
@@ -734,79 +766,6 @@ margin: 0 auto;
     }
 
 }
-
-/*------Tel------*/
-
-@media screen and (max-width: 510px) {
-
-    #Dimension{
-        object-fit: cover;
-        height: 300px;
-    }
-
-    .selection h2{
-        padding: 0 5px;
-    }
-    .restaurants h2{
-        padding: 0 5px;
-    }
-
-    .restaurants__carte_resto img{
-        width: 480px;
-    }
-
-    .restaurants__texte_carte{
-        width: 465px;
-    }
-    
-}
-
-@media screen and (max-width: 490px) {
-
-    .restaurants__carte_resto img{
-        width: 460px;
-    }
-
-    .restaurants__texte_carte{
-        width: 445px;
-    }
-    
-}
-
-@media screen and (max-width: 440px) {
-
-    .restaurants__carte_resto img{
-        width: 365px;
-    }
-
-    .restaurants__texte_carte{
-        width: 350px;
-    }
-
-}
-
-/*--------Tablette--------*/
-
-@media screen and (max-width: 768px) {
-
-    .selection h2{
-        padding: 0 10px;
-    }
-    .restaurants h2{
-        padding: 0 10px;
-    }
-
-    .restaurants__carte_resto img{
-        width: 480px;
-    }
-
-    .restaurants__texte_carte{
-        width: 465px;
-    }
-    
-}
-
-/*----ajustement affichage tablette et pc----*/
 
 @media screen and (min-width: 768px){
 
@@ -839,41 +798,31 @@ margin: 0 auto;
 
 }
 
-/*-------pc------*/
+/*------Tel------*/
 
-@media screen and (max-width: 992px){
-
-    .restaurants__menu{
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 510px) {
 
     #Dimension{
         object-fit: cover;
         height: 300px;
     }
 
-    
+    .selection h2{
+        padding: 0 5px;
+    }
+    .restaurants h2{
+        padding: 0 5px;
+    }
+
     .restaurants__carte_resto img{
-        width: 400px;
+        width: 100%;
+    }
+
+    .restaurants__carte_resto, .restaurants__position-coeur{
+        width: 100%;
     }
 
     .restaurants__texte_carte{
-        width: 385px;
+        width: 100%;
     }
-    
-}
-
-@media screen and (min-widht: 991px){ 
-
-    .restaurants__carte_resto {
-        display: flex;
-        margin-top: 20px;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        width: 45%;
-        padding: 1rem;
-        flex-wrap: wrap;
-    }
-
 }
