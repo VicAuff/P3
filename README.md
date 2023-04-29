@@ -1,4 +1,4 @@
-# OhMyFood 3em projet OpenClassrooms 
+# OhMyFood
 
 Accessible en ligne, en cliquant sur le lien ----> [OhMyFood](https://vicauff.github.io/P3/).
 
